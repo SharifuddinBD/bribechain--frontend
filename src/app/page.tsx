@@ -17,31 +17,35 @@ const LandingPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 overflow-x-hidden">
-      {/* Navigation */}
-      <nav className="bg-black/20 backdrop-blur-md border-b border-white/10 fixed w-full top-0 z-50 transition-all duration-500">
+    {/* Navigation */}
+    <nav className="bg-black/20 backdrop-blur-md border-b border-white/10 fixed w-full top-0 z-50 transition-all duration-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className={`flex items-center space-x-3 transition-all duration-700 ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
-              <Shield className="h-8 w-8 text-cyan-400 animate-pulse" />
-              <span className="text-2xl font-bold text-white">BribeChain</span>
+            <div className="flex justify-between items-center h-16">
+                <div className={`flex items-center space-x-3 transition-all duration-700 ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
+                    <Shield className="h-8 w-8 text-cyan-400 animate-pulse" />
+                    <span className="text-2xl font-bold text-white">BribeChain</span>
+                </div>
+                <div className={`hidden md:flex items-center space-x-8 transition-all duration-700 delay-300 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
+                    <a href="/" className="text-gray-300 hover:text-cyan-400 transition-all duration-300 hover:scale-110 relative group">
+                        Home
+                        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="/about" className="text-gray-300 hover:text-cyan-400 transition-all duration-300 hover:scale-110 relative group">
+                        About
+                        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#explore" className="text-gray-300 hover:text-cyan-400 transition-all duration-300 hover:scale-110 relative group">
+                        Browse Reports
+                        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#verify" className="text-gray-300 hover:text-cyan-400 transition-all duration-300 hover:scale-110 relative group">
+                        Verify Hash
+                        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </div>
             </div>
-            <div className={`hidden md:flex items-center space-x-8 transition-all duration-700 delay-300 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
-              <a href="#about" className="text-gray-300 hover:text-cyan-400 transition-all duration-300 hover:scale-110 relative group">
-                About
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
-              </a>
-              <a href="#explore" className="text-gray-300 hover:text-cyan-400 transition-all duration-300 hover:scale-110 relative group">
-                Browse Reports
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
-              </a>
-              <a href="#verify" className="text-gray-300 hover:text-cyan-400 transition-all duration-300 hover:scale-110 relative group">
-                Verify Hash
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
-              </a>
-            </div>
-          </div>
         </div>
-      </nav>
+    </nav>
 
       {/* Hero Section */}
       <div className="relative overflow-hidden pt-16">
