@@ -80,7 +80,7 @@ const LandingPage = () => {
                 </button>
               </Link>
 
-              <Link href="/reports">
+              <Link href="/explore">
                 <button className="bg-white/10 backdrop-blur-md text-white border border-white/20 hover:bg-white/20 hover:border-cyan-400/50 px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg">
                   Browse Reports
                 </button>

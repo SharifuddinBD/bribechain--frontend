@@ -280,17 +280,68 @@ const removeFile = (index: RemoveFileProps['index']): void => {
   };
 
   const incidentTypes = [
+    // Government & Administration
     'Government Official Bribery',
+    'Government Contract Kickback',
+    'Passport/ID Issuance Bribery',
+    'Public Service Delay Extortion',
+    'Permit/License Fee Corruption',
+    'Municipal Service Kickback',
+    'Land Registration Bribery',
+    'Election Manipulation',
+    'Subsidy/Grant Misappropriation',
+
+    // Law Enforcement & Security
     'Police Corruption',
+    'Traffic Police Bribery',
+    'Evidence Tampering by Police',
+    'Illegal Bail Money Extortion',
+    'Law Enforcement Protection Racket',
+    'Smuggling Facilitation by Police',
+
+    // Judicial System
     'Judicial Corruption',
+    'Case Dismissal Bribery',
+    'Court Document Alteration',
+    'Judge Bribery for Verdict',
+    'Legal Aid Fraud',
+
+    // Healthcare
     'Healthcare Bribery',
+    'Hospital Bed Allocation Bribery',
+    'Medical Supply Procurement Fraud',
+    'Medicine Price Inflation Kickback',
+    'Ambulance Service Extortion',
+    'Fake Medical Certificates for Bribe',
+
+    // Education
     'Education Sector Corruption',
+    'Exam Paper Leak',
+    'Admission Seat Selling',
+    'Scholarship Fund Misappropriation',
+    'Certificate/Degree Forgery for Bribe',
+
+    // Business & Trade
     'Business License Bribery',
-    'Construction/Permit Corruption',
-    'Tax Evasion Facilitation',
+    'Import/Export Clearance Bribery',
     'Customs/Border Corruption',
+    'Tax Evasion Facilitation',
+    'Industrial Safety Inspection Bribery',
+    'Tender/Bid Rigging',
+
+    // Infrastructure & Utilities
+    'Construction/Permit Corruption',
+    'Utility Connection Bribery',
+    'Public Works Material Theft',
+    'Transport Route Permit Bribery',
+
+    // Miscellaneous
+    'NGO Fund Misuse',
+    'Smuggling Facilitation',
+    'Money Laundering Assistance',
     'Other'
   ];
+
 
   const currencies = ['BDT', 'EUR', 'GBP', 'BTC', 'ETH', 'USD', 'Local Currency'];
   const organizationTypes = ['Government', 'Private Company', 'NGO', 'Educational Institution', 'Healthcare', 'Law Enforcement', 'Judicial', 'Other'];
